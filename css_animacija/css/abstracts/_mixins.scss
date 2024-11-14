@@ -1,0 +1,16 @@
+@mixin box($background, $delay) {
+  padding: 10rem 13rem;
+  position: relative;
+  top: -100vh;
+  border: 2px solid #fff;
+  background: $background;
+  text-align: center;
+  animation: ani 1.5s linear $delay 1;
+  animation-fill-mode: forwards;
+}
+
+@mixin slovo() {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #fff;
+}

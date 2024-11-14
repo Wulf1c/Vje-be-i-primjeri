@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url(../slike/blur-clean.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .c {
+  padding: 10rem 13rem;
+  position: relative;
+  top: -100vh;
+  border: 2px solid #fff;
+  background: rgba(58, 57, 57, 0.7);
+  text-align: center;
+  animation: ani 1.5s linear 0s 1;
+  animation-fill-mode: forwards;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #fff;
+}
+main .s {
+  padding: 10rem 13rem;
+  position: relative;
+  top: -100vh;
+  border: 2px solid #fff;
+  background: rgba(128, 30, 30, 0.733);
+  text-align: center;
+  animation: ani 1.5s linear 1.5s 1;
+  animation-fill-mode: forwards;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #fff;
+}
+main .s1 {
+  padding: 10rem 13rem;
+  position: relative;
+  top: -100vh;
+  border: 2px solid #fff;
+  background: rgba(180, 118, 36, 0.7);
+  text-align: center;
+  animation: ani 1.5s linear 3s 1;
+  animation-fill-mode: forwards;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #fff;
+}
+@keyframes ani {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0;
+  }
+}
