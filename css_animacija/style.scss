@@ -1,0 +1,37 @@
+@import "./css/base/reset";
+@import "./css/base/color";
+@import "./css/abstracts/mixins";
+
+body {
+  height: 100vh;
+  background: url(./slike/blur-clean.jpg) no-repeat center center/cover fixed;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .c {
+    @include box($crna, 0s);
+    @include slovo;
+  }
+  .s {
+    @include box($crvena, 1.5s);
+    @include slovo;
+  }
+  .s1 {
+    @include box($smedja, 3s);
+    @include slovo;
+  }
+
+  @keyframes ani {
+    0% {
+      top: -100vh;
+    }
+    100% {
+      top: 0;
+    }
+  }
+}
